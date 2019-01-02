@@ -1,0 +1,17 @@
+body{
+    background-color: black;
+    color: rgb(255,255,255);
+}
+.dgrid {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+label {
+    text-align: right;
+    margin-right: 50px;
+}
+.sbm {
+    display: block;
+    margin: auto;
+    width: 100%;
+}

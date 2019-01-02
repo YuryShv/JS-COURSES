@@ -4,5 +4,7 @@ body{
 }
 div{
     text-align: center;
-    
+}
+table{
+    margin: auto;
 }
