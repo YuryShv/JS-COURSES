@@ -1,0 +1,79 @@
+*{
+    height:100%;
+
+}
+.container{
+    display:grid;
+    grid-gap: 10px;
+    height: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-areas: 
+    "item1 item1 item2"
+    "item3 sub-container sub-container"
+    "item3 sub-container sub-container";
+}
+.sub-container{
+    display:grid;
+    grid-area: sub-container;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "item4 item4"
+    "item5 item6"; 
+}
+
+.item1{
+    display: grid;       
+    align-items: center;     
+    justify-items: center; 
+    grid-area: item1;
+    font-size: 60px;
+    color: white;
+    background-color: darkcyan;
+}
+.item2{
+    display: grid;           
+    align-items: center;     
+    justify-items: center; 
+    grid-area: item2;
+    font-size: 60px;
+    color: white;
+    background-color:yellow;
+}
+.item3{
+    display: grid;       
+    align-items: center;     
+    justify-items: center; 
+    grid-area:item3;
+    font-size: 60px;
+    color: white;
+    background-color:cyan;
+}
+.item4{
+    display: grid;       
+    align-items: center;     
+    justify-items: center; 
+    grid-area:item4;
+    font-size: 60px;
+    color: white;
+    background-color: purple;
+}
+.item5{
+    display: grid;       
+    align-items: center;     
+    justify-items: center; 
+    grid-area:item5;
+    font-size: 60px;
+    color: white;
+    background-color: lightblue;
+}
+.item6{
+    display: grid;       
+    align-items: center;     
+    justify-items: center; 
+    grid-area:item6;
+    font-size: 60px;
+    color: white;
+    background-color: orange;
+}

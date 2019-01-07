@@ -1,0 +1,54 @@
+
+html{
+    height: 97%;
+}
+body{
+    height:100%;
+    text-align: center;
+    background-color: black;
+}
+.main-block{
+    height: 100%;
+    width: 100%;
+}
+.first-block{
+    width: 100%;
+}
+.first-block div{
+    height: 10vh;
+    background-color: orange;
+    display: inline-block;
+    width: 48%;
+    margin-top: 1.3vh;
+}
+.second-block{
+    width: 96.4%;
+    margin-top: 2.9vh;
+    margin-left: 1.85vw;
+    height: 30vh;
+    background-color: yellow;
+}
+.third-block{
+    width: 100%;
+    margin-top: 2.9vh;
+}
+.third-block div{
+    height: 25vh;
+    display: inline-block;
+    background-color: blue;
+    width: 30.65%;
+    margin-right: 0.8vw;
+    margin-left: 1vw;
+}
+.fourth-block{
+    margin-top: 3.5vh;
+    width: 100%;
+}
+.fourth-block div{
+    height: 19vh;
+    display: inline-block;
+    background-color: darkgray;
+    width: 22.46%;
+    margin-right: 0.8vw;
+    margin-left: 1vw;
+}
