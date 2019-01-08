@@ -13,15 +13,7 @@
     "item3 item4 item4"
     "item3 item5 item6";
 }
-.sub-container{
-    display:grid;
-    grid-area: sub-container;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-    "item4 item4"
-    "item5 item6"; 
-}
+
 
 .item1{
     display: grid;       
