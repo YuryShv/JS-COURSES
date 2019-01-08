@@ -1,0 +1,28 @@
+*{
+    height:100%;
+    width: 100%;
+}
+body{
+    width: 97%;
+    height: 97%;
+}
+.main-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+.main-container div{
+    display:grid;
+    justify-items: left;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 30px;
+    padding-left: 10px;
+    
+}
+.second-item{
+    grid-column-start: 3;
+    grid-column-end: 6;
+}

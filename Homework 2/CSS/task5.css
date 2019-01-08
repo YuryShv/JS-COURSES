@@ -3,13 +3,13 @@
     margin: 0;
 }
 
-.main-container {
+.main-block {
     width: 99%;
     height: 100%;
 }
 
 @media screen and (min-device-width: 1080px) {
-    .flex-first-raw {
+    .first-raw {
         display: flex;
         width: 100%;
         height: 10%;
@@ -30,7 +30,7 @@
         width: 66%;
     }
 
-    .flex-second-raw {
+    .second-raw {
         display: flex;
         width: 100%;
         height: 53%;
@@ -43,7 +43,7 @@
         border-radius: 5px;
     }
 
-    .flex-third-raw {
+    .third-raw {
         display: flex;
         width: 100%;
         height: 30%;
@@ -63,7 +63,7 @@
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 414px) {
-    .flex-second-raw {
+    .second-raw {
         display: flex;
         width: 100%;
         height: 10%;
@@ -76,7 +76,7 @@
         width: 100%;
         border-radius: 5px;
     }
-    .flex-first-raw {
+    .first-raw {
         display: flex;
         width: 100%;
         height: 10%;
@@ -98,7 +98,7 @@
 
 
 
-    .flex-third-raw {
+    .third-raw {
         display: flex;
         width: 100%;
         height: 74%;
@@ -120,7 +120,7 @@
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width : 1024px)  {
-    .flex-first-raw {
+    .first-raw {
         display: flex;
         width: 100%;
         height: 10%;
@@ -142,7 +142,7 @@
         width: 66%;
     }
 
-    .flex-second-raw {
+    .second-raw {
         display: flex;
         width: 100%;
         height: 53%;
@@ -156,7 +156,7 @@
         margin: 1%;
     }
 
-    .flex-third-raw {
+    .third-raw {
         display: flex;
         width: 100%;
         height: 30%;
