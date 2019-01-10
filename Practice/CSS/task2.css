@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+height:97%;
+}
+.main-container{
+    display:flex;
+    width: 100%;
+    
+}
+.main-scroll{
+    width: 28%;
+    overflow-y: scroll;
+    visibility: hidden;
+}
+.scroll-list {
+    width: 90%;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: block;
+    height: 100%;
+   
+}
+
+.scroll-list,
+.main-scroll:hover {
+    visibility: visible;
+}
+.item {
+    display: flex;
+    height: 100px;
+}
+
+.item img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.chat{
+    display:block;
+    padding: 5px;
+}
+.name{
+    display: flex;
+    padding-left: 10px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.answer{
+    display:flex;
+}
+.answer-avatar{
+    align-self:flex-end;
+    margin-left: 10px;
+}
+.answer-text{
+    background-color: lightseagreen;
+    border-radius: 25px;
+    padding: 10px;
+    text-align: justify;
+    margin-left: 25%;
+    margin-top: 10px;
+}
+.message-scroll{
+    width: 60%;
+    padding: 10px;
+    margin-left: 10px;
+    height:100%;
+    overflow: auto;
+    visibility: hidden;
+}
+.message-scroll:hover {
+    visibility: visible;
+}
+.message-scroll-item{
+    display:flex;
+    height: fit-content;
+    visibility: visible;
+}
+.message-scroll-item img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+.message{
+    display:flex;
+}
+.message-text{
+    border-radius: 25px;
+    background-color: yellowgreen;
+    padding: 10px;
+    text-align: justify;
+    margin-left: 10px;
+}
+::-webkit-scrollbar-track {
+    border: 1px solid yellowgreen;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: yellowgreen;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #88ba1c;
+}

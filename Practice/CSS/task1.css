@@ -129,7 +129,7 @@ hr {
     position: relative;
     width: 400px;
     height: 400px;
-    background-image: url(../../Homework\ 1/Black-Cat.jpg);
+    background-image: url(../Resources/Black-Cat.jpg);
     background-size: 300px 300px;
     color: white;
 }
@@ -147,7 +147,7 @@ hr {
 .card-header div main {
     width: 97.5%;
     height: 40%;
-    margin-top: 32%;
+    margin-top: 33%;
     padding: 5px;
     background-color: darkslategrey;
     text-align: justify;
