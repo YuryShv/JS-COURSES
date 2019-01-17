@@ -6,11 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="./CSS/task1.css">
-    <script defer type="text/javascript" src="task1.js"></script>
+    <script defer type="text/javascript" src="some.js"></script>
 </head>
 <body>
     <div class="container">
-    <form onsubmit="createPost()">
+    <form onsubmit="createPost()" action="task1.html">
+        <label for="tid">ID</label>
+        <input type="text" name="tid" id="tid" readonly>
         <label for="UserID">User ID</label>
         <input type="text" name="UserID" id="userid">
         <label for="title">Title</label>

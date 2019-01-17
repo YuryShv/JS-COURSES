@@ -1,6 +1,5 @@
-const http = new XMLHttpRequest();
-const url = 'db.json';
-const localurl = 'db.json'
+var http = new XMLHttpRequest();
+var url = 'http://localhost:3000/posts/';
 var data = '';
 function Obj(){
     this.userId = '';
@@ -21,26 +20,22 @@ getAll = function(){
         data[i].userId + "</td><td>" +
         data[i].id + "</td><td>" +
         data[i].title + "</td><td>" +
-        data[i].body + "</td><td><button class='delete'>Delete</button></td><td><button class='edit'>Edit</button></td></tr>"
+        data[i].body + "</td><td><button class='delete' onclick='deleteElement("+data[i].id+")'>Delete</button></td><td><button class='edit' onclick = 'openPage("+data[i].id+")'>Edit</button></td></tr>"
     }
     document.getElementById("main-table").innerHTML = table;
-    
 }
-
+function deleteElement(param){
+    http.open('DELETE', url + param);
+    http.setRequestHeader('Content-type', 'application/json; charset=utf-8');
+    http.send();
+    if(http.status == 200){
+       // document.location.href = "task1.html";
+    }
+}
 function openFormPage(){
-    document.location.href = "form.html";
+  document.location.href = "form.html";
 }
-function createPost(){
-    http.open('POST',localurl,false);
-    http.send(JSON.stringify(getValue()));
-    alert(JSON.stringify(getValue()));
+function openPage(param){
+    document.location.href = ("form.html" + "?rowID=" + param);
+}
 
-}
-function getValue(){
-    var newPost = new Obj();
-    newPost.id = data.length + 1;
-    newPost.userId = document.getElementById("userid").value;
-    newPost.title = document.getElementById("title").value;
-    newPost.body =  document.getElementById("body").value;
-    return newPost;
-}
