@@ -48,6 +48,7 @@ height:97%;
 .chat{
     display:block;
     padding: 5px;
+    height: auto;
 }
 .name{
     display: flex;
@@ -58,6 +59,7 @@ height:97%;
 }
 .answer{
     display:flex;
+    height: auto;
 }
 .answer-avatar{
     align-self:flex-end;
@@ -98,6 +100,7 @@ height:97%;
 }
 .message{
     display:flex;
+    height: auto;
 }
 .message-text{
     border-radius: 25px;
