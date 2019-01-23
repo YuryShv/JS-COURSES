@@ -1,0 +1,19 @@
+
+
+table{
+    width:100%;
+   
+}
+th{
+    border: 1px solid black;
+}
+td{
+    border: 1px solid black;
+}
+form input{
+    margin-top: 10px;
+    display:block;
+}
+button{
+    width: 100%;
+}
