@@ -15,7 +15,7 @@ controllerName="sap.ui.demo.db.controller.App"
 				<dependents>
 					<ObjectListItem
 						id="productExtended"
-						title="Username: {people>UserName} FirstName: {people>FirstName} LastName: {people>LastName}"
+						title="Username: {people>UserName} | FirstName: {people>FirstName} | LastName: {people>LastName} | Gender: {people>Gender}"
 						type="Active">
 					</ObjectListItem>
 				</dependents>

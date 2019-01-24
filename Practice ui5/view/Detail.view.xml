@@ -2,7 +2,8 @@
 	<Shell>
 	<App id="detail">
 	<pages>
-	<Page>
+	<Page showNavButton = "true"
+    navButtonPress = ".onNavBack">
     <Panel id="PeopleDetailPanel" headerText="Details" class="sapUiResponsiveMargin" width="auto">
     <content>
       <Table id="details" >

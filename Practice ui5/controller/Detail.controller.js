@@ -1,7 +1,7 @@
 sap.ui.define([
 	"sap/ui/demo/db/controller/App.controller",
-	"sap/m/MessageBox"
-], function (AppController, MessageBox) {
+	"sap/ui/core/routing/History"
+], function (AppController, History) {
 	"use strict";
 	return AppController.extend("sap.ui.demo.db.controller.Detail", {
 		onInit: function(){
@@ -16,6 +16,18 @@ sap.ui.define([
 			}
 			);
 			console.log(this.byId("PeopleDetailPanel").getBindingContext('people'));
-		}
+		},
+		onNavBack: function () {
+			var oHistory, sPreviousHash;
+	  
+			oHistory = History.getInstance();
+			sPreviousHash = oHistory.getPreviousHash();
+	  
+			if (sPreviousHash !== undefined) {
+			  window.history.go(-1);
+			} else {
+			  this.getRouter().navTo("appHome", {}, true);
+			}
+		  }
 	});
 });
